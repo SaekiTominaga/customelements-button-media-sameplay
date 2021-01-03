@@ -1,0 +1,46 @@
+{
+	"name": "@saekitominaga/customelements-button-media-sameplay",
+	"version": "1.0.0",
+	"description": "Simultaneous playback button for multiple audio / video.",
+	"type": "module",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.10.0",
+		"@typescript-eslint/parser": "^4.10.0",
+		"brotlin": "^1.1.0",
+		"cpy-cli": "^3.1.1",
+		"eslint": "^7.16.0",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-jsdoc": "^30.7.9",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+		"terser": "^5.5.1",
+		"typescript": "^4.1.3"
+	},
+	"main": "dist/ButtonMediaSamePlay.esm.js",
+	"types": "dist/ButtonMediaSamePlay.esm.d.ts",
+	"scripts": {
+		"_ts-watch:tsc": "tsc -w",
+		"_ts-watch:compress": "onchange -f add -f change -v dist/ButtonMediaSamePlay.esm.js -- brotlin compress dist/ButtonMediaSamePlay.esm.js -m 1",
+		"_ts-watch:minify": "onchange -f add -f change -v dist/ButtonMediaSamePlay.esm.js -- terser dist/ButtonMediaSamePlay.esm.js -o dist/ButtonMediaSamePlay.min.esm.js -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=ButtonMediaSamePlay.esm.js,includeSources",
+		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/ButtonMediaSamePlay.min.esm.js -- brotlin compress dist/ButtonMediaSamePlay.min.esm.js -m 1",
+		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/ButtonMediaSamePlay.esm.d.ts -- cpy dist/ButtonMediaSamePlay.esm.d.ts dist --rename=ButtonMediaSamePlay.min.esm.d.ts",
+		"ts-watch": "run-p _ts-watch:*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/customelements-button-media-sameplay.git"
+	},
+	"keywords": [
+		"web-components",
+		"custom-elements"
+	],
+	"author": "Saeki Tominaga",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SaekiTominaga/customelements-button-media-sameplay/issues"
+	},
+	"homepage": "https://github.com/SaekiTominaga/customelements-button-media-sameplay#readme",
+	"publishConfig": {
+		"access": "public"
+	}
+}
