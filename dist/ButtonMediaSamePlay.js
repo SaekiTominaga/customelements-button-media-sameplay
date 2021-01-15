@@ -73,3 +73,4 @@ export default class ButtonMediaSamePlay extends HTMLButtonElement {
     }
 }
 _targetElements = new WeakMap(), _paused = new WeakMap();
+//# sourceMappingURL=ButtonMediaSamePlay.js.map

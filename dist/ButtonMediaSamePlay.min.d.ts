@@ -13,4 +13,4 @@ export default class ButtonMediaSamePlay extends HTMLButtonElement {
      */
     private _clickEvent;
 }
-//# sourceMappingURL=ButtonMediaSamePlay.esm.d.ts.map
+//# sourceMappingURL=ButtonMediaSamePlay.d.ts.map
