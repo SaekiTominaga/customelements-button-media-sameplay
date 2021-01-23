@@ -14,7 +14,7 @@ Simultaneous playback button for multiple audio / video by Custom Elements.
 
 ## Examples
 
-```
+```HTML
 <button type="button" is="x-media-same-play"
   data-targets-for="video1 video2"
 >Simultaneous playback</button>
