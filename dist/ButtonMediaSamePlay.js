@@ -14,8 +14,6 @@ var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (
 var _targetElements, _paused;
 /**
  * Simultaneous playback button for multiple audio / video.
- *
- * @version 1.0.0
  */
 export default class ButtonMediaSamePlay extends HTMLButtonElement {
     constructor() {

@@ -1,7 +1,5 @@
 /**
  * Simultaneous playback button for multiple audio / video.
- *
- * @version 1.0.0
  */
 export default class ButtonMediaSamePlay extends HTMLButtonElement {
 	#targetElements: HTMLMediaElement[] = []; // 同時再生する要素
