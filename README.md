@@ -26,9 +26,9 @@ Simultaneous playback button for multiple audio / video by Custom Elements.
 ## Attributes
 
 <dl>
-<dt>type [optional]</dt>
+<dt><code>type</code> [optional]</dt>
 <dd>This function automatically sets <code>type="button"</code>.
 However, it is recommended to manually add <code>type="button"</code> for JavaScript disabled environments and browsers that do not <a href="https://caniuse.com/custom-elementsv1">support Customized built-in elements</a> (Safari 14, Edge Legacy, etc.). According to <a href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type">the description in the HTML specification</a>, <q cite="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type">The missing value default and invalid value default are the <a href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit-state">Submit Button</a> state</q>.</dd>
-<dt>data-targets-for [required]</dt>
+<dt><code>data-targets-for</code> [required]</dt>
 <dd>Multiple media element's ID. (Space delimited)</dd>
 </dl>
